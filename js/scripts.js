@@ -34,7 +34,7 @@ function convertatron(num) {
       z = (z % 1);
     }
     if (z === 0){
-      return("C".repeat(c)) + ("L".repeat(l)) + ("X".repeat(x)) + ("V".repeat(v)) + ("I".repeat(i));
+      return("M".repeat(m)) + ("D".repeat(d))+ ("C".repeat(c)) + ("L".repeat(l)) + ("X".repeat(x)) + ("V".repeat(v)) + ("I".repeat(i));
     }
   }
 }
