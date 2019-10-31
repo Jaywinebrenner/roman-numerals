@@ -1,0 +1,19 @@
+body {
+   background: url("https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg") no-repeat fixed center;
+}
+
+ul li{
+  font-size: 30rem;
+  color: white;
+  list-style: none;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 8rem;
+  color: white;
+}
+#inputForm {
+  margin-left: 25%;
+}

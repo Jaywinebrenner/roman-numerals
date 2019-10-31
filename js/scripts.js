@@ -1,9 +1,6 @@
 
-// var num = ();
-// var numM = ();
-// var numD
-function convertatron(num) {
 
+function convertatron(num) {
 
 
     if (num >= 4000 || (isNaN(num))){
@@ -39,7 +36,7 @@ function convertatron(num) {
     }
     if (num === 0){
       var stringResult = ("M".repeat(m)) + ("D".repeat(d))+ ("C".repeat(c)) + ("L".repeat(l)) + ("X".repeat(x)) + ("V".repeat(v)) + ("I".repeat(i));
-      // return stringResult;
+
     }
     if (stringResult.includes("DCCCC")); {
     stringResult = stringResult.replace("DCCCC", "CM");
@@ -59,19 +56,9 @@ function convertatron(num) {
     if (stringResult.includes("XXXX"));{
       stringResult = stringResult.replace("XXXX", "XL");
     }
-
     return stringResult;
-    // var strArray = stringResult.split(" ");
-    //
-    // if (stringResult.includes("DCCC")){
-    //   var supersplice= stringResult.splice((stringResult.indexOf("DCCC")), 4, "CM");
-    //   return supersplice;
 
     }
-
-
-
-
 
 
 
@@ -83,6 +70,8 @@ $(document).ready(function(){
     var number = parseInt($("input#inputField").val());
     var result = convertatron(number);
 
-    $("ul").append("<li>" + result + "</li>")
+    $("ul").html("<li>" + result + "</li>")
+
+
   });
 });
