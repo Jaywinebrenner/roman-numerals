@@ -5,6 +5,14 @@
 function convertatron(num) {
 
   for (var z = num; z >= 0; z--){
+    if (z >= 1000){
+      var m = parseInt(z / 1000);
+      z = (z % 1000);
+    }
+    if (z >= 500){
+      var d = parseInt(z / 500);
+      z = (z % 500);
+    }
     if (z >= 100){
       var c = parseInt(z / 100);
       z = (z % 100);
